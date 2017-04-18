@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Password Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div>	
+		<h1>Random Password Generator </h1>
+		<br>Enter the length of the password (1 to 128) &nbsp
+		<input id="length" type="text" name="length"></input>
+		<div class="checkbox">
+			<br><input type="checkbox" class="check" name="num" id="num">Include Numbers(0123456789)
+			<br><input type="checkbox" class="check" name="lower" id="lower">Include LowerCase(abcdefghijklmnopqrstuvwxyz)
+			<br><input type="checkbox" class="check" name="upper" id="upper">Include Uppercase(ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+			<br><input type="checkbox" class="check" name="symbols" id="symbols">Include ASCII Symlbols(!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~)
+		</div>
+		<br><button onclick="generatePassword()" class="btn btn-primary" id="generate"> Generate </button>
+		<br><div>Your Password generated is : <span id="pass"></span></div>
+		<br><button onclick="copyToClipboard('pass')" class="btn btn-primary"> Copy to Clipboard. </button>
+	</div>
+</body>
+	<script type="text/javascript" src="popup.js"></script>
+</html>																				
